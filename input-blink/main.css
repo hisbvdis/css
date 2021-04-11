@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* Чтобы в Chrome при клике на элементы они не мигали, при наведении 
+на элемент стилизовать курсор под "палец" только, когда используется 
+hover-указатель, то есть, мышь - (hover: hover) */
+@media (hover: hover) {
+  .option--waBlink {
+    cursor: pointer;
+  }
+}
+
+
+/* Это неправильный вариант */
+.option {
+  cursor: pointer;
+}
+
+
+/* =========================
+..option
+========================= */
+.option,
+.option--waBlink {
+  display: inline-flex;
+  align-items: center;
+
+  vertical-align: middle;
+}
+
+.option__mark {
+  position: relative;
+
+  flex-shrink: 0;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+
+  vertical-align: middle;
+
+  border: 2px solid #000;
+}
+
+.option__input:hover + .option__mark,
+.option__input:focus + .option__mark {
+  border-color: #56c3b2;
+}
+
+.option__input:checked + .option__mark--radio::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 40%;
+  height: 40%;
+
+  background: #56c3b2;
+  border-radius: 50%;
+}
+
+.option__mark--radio {
+  border-radius: 50%;
+}
+
+.option__input:checked + .option__mark--checkbox::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%) rotate(-45deg);
+
+  width: 65%;
+  height: 25%;
+
+  border-left: 2px solid #56c3b2;
+  border-bottom: 2px solid #56c3b2;
+}
+
+
+@media (min-width: 768px) {
+  .option__mark {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
