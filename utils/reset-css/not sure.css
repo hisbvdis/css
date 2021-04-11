@@ -1,0 +1,39 @@
+img:not([alt]) {
+  border: 5px solid red;
+}
+
+
+/* ====================== */
+/* ===== НЕ УВЕРЕН ====== */
+/* ====================== */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+
+a {
+  color: inherit;
+}
+
+
+@media (hover: pointer) {
+  input {
+    cursor: default;
+  }
+}
+
+
+/* ========================= */
+/* 1rem=1px  (https://twitter.com/eladsc/status/1378971163922206721) */
+html {
+  font-size: 6.25%;
+}
+
+body {
+  font-size: 16rem;
+}
+/* ========================= */
