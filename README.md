@@ -1,4 +1,4 @@
-# Шаблоны CSS
+# Мои примеры - CSS
 
 - Элемент, выходящий за границы родителя           ([Папка](beyond-parent) /             [Демо](https://hisbvdis.github.io/my-samples-css/beyond-parent/index.html))
 - Предотвращение мигания input в мобильном Chrome  ([Папка](input-blink) /               [Демо](https://hisbvdis.github.io/my-samples-css/input-blink/index.html))
