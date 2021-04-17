@@ -14,6 +14,18 @@ body {
   overflow-y: scroll;
 }
 
+/* ========================= */
+/* 1rem=1px  (https://twitter.com/eladsc/status/1378971163922206721) */
+:root {
+  font-size: 6.25%; /*1rem = 1px*/
+  --fontSizeRegular: 17rem;
+}
+
+body {
+  font-size: var(--fontSizeRegular);
+}
+/* ========================= */
+
 .srOnly {
   position: absolute;
 
@@ -28,15 +40,6 @@ body {
   overflow: hidden;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
-}
-
-/* Новее и короче srOnly, но не работает в IE11 */
-.srOnly--new {
-  position: absolute;
-
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 
 img {

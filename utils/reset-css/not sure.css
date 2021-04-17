@@ -1,11 +1,4 @@
-img:not([alt]) {
-  border: 5px solid red;
-}
-
-
-/* ====================== */
-/* ===== НЕ УВЕРЕН ====== */
-/* ====================== */
+/* ===== НЕ УВЕРЕН (НЕТ, потому что не видны пустые элементы) ====== */
 button,
 input,
 optgroup,
@@ -26,14 +19,11 @@ a {
   }
 }
 
+/* Новый (плохо работает) */
+.srOnly {
+  position: absolute;
 
-/* ========================= */
-/* 1rem=1px  (https://twitter.com/eladsc/status/1378971163922206721) */
-html {
-  font-size: 6.25%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
-
-body {
-  font-size: 16rem;
-}
-/* ========================= */
