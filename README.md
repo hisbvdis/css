@@ -7,7 +7,8 @@
 - Блокировка скролла страницы при скролле элемента         ([Папка](tricks/only-elem-scrolling) /       [Демо](https://hisbvdis.github.io/css/tricks/only-elem-scrolling/index.html))
 - Обрезать текст по количеству строк                       ([Папка](tricks/trim-text-height-by-lines) / [Демо](https://hisbvdis.github.io/css/tricks/trim-text-height-by-lines/index.html))
 - Альтернатива удалению Outline                            ([Папка](tricks/outline-none) /              [Демо](https://hisbvdis.github.io/css/tricks/outline-none/index.html))
-- Блок с фиксированным соотношением сторон (через padding) ([Папка](tricks/padding-aspect-ratio) /      [Демо](https://hisbvdis.github.io/css/tricks/padding-aspect-ratio/index.html))
+- Блок с фиксированным соотношением сторон (через padding) ([Папка](tricks/aspect-ratio-padding) /      [Демо](https://hisbvdis.github.io/css/tricks/aspect-ratio-padding/index.html))
+- Дополнительный отступ при переходе по якорной ссылке     ([Папка](tricks/anchor-scroll-padding) /      [Демо](https://hisbvdis.github.io/css/tricks/anchor-scroll-padding/index.html))
 
 
 ## Утилиты (полезные сллужебные решения)
