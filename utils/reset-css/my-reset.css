@@ -1,3 +1,6 @@
+/* ================================================== */
+/* ====================== ТОЧНО ===================== */
+/* ================================================== */
 html {
   box-sizing: border-box;
 }
@@ -14,17 +17,9 @@ body {
   overflow-y: scroll;
 }
 
-/* ========================= */
-/* 1rem=1px  (https://twitter.com/eladsc/status/1378971163922206721) */
-:root {
-  font-size: 6.25%; /*1rem = 1px*/
-  --fontSizeRegular: 17rem;
-}
-
-body {
-  font-size: var(--fontSizeRegular);
-}
-/* ========================= */
+/* 1rem=1px */
+:root { font-size: 6.25% }
+body  { font-size: 14rem }
 
 .srOnly {
   position: absolute;
@@ -42,8 +37,13 @@ body {
   clip-path: inset(100%);
 }
 
+
+/* ================================================== */
+/* ================= ДОПОЛНИТЕЛЬНО ================== */
+/* ================================================== */
 img {
   display: block;
+  max-width: 100%;
 }
 
 button:not(:disabled) {
