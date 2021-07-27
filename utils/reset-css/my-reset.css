@@ -21,6 +21,10 @@ body {
 :root { font-size: 6.25% }
 body  { font-size: 14rem }
 
+button:not(:disabled) {
+  cursor: pointer;
+}
+
 .srOnly {
   position: absolute;
 
@@ -46,14 +50,40 @@ img {
   max-width: 100%;
 }
 
-button:not(:disabled) {
-  cursor: pointer;
-}
-
 button,
 input,
 optgroup,
 select,
 textarea {
   font: inherit;
+}
+
+/* ===== НЕ УВЕРЕН (НЕТ, потому что не видны пустые элементы) ====== */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+
+a {
+  color: inherit;
+}
+
+
+@media (hover: pointer) {
+  input {
+    cursor: default;
+  }
+}
+
+/* Новый (плохо работает) */
+.srOnly {
+  position: absolute;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
