@@ -1,5 +1,5 @@
 /* Ширина задаётся для элемента, в который вкладывается блок с соотношением сторон */
-.container {
+.wrapper {
   inline-size: 50vw;
 }
 
@@ -10,6 +10,9 @@
 
   inline-size: 100%;
   padding-bottom: 50%;
+  height: 0;
+
+  overflow: hidden;
 }
 
 

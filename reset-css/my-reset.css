@@ -5,11 +5,13 @@ html {
   box-sizing: border-box;
 }
 
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
+
 
 body {
   margin: 0;
@@ -17,13 +19,16 @@ body {
   overflow-y: scroll;
 }
 
+
 /* 1rem=1px */
 :root { font-size: 6.25% }
 body  { font-size: 14rem }
 
+
 button:not(:disabled) {
   cursor: pointer;
 }
+
 
 .srOnly {
   position: absolute;
