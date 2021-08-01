@@ -35,7 +35,7 @@ body {
   margin-inline-start: -50vw;
 
   /* 4. Сместить элемент вправо на половину ширины элемента */
-  left: 50%;
+  inset-inline-start: 50%;
 
   background: #ECE8F6;
 }
