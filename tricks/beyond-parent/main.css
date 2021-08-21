@@ -39,3 +39,12 @@ body {
 
   background: #ECE8F6;
 }
+
+/* Блок для копирования */
+.outside {
+  position: relative;
+  inset-inline-start: 50%;
+
+  inline-size: 100vw;
+  margin-inline-start: -50vw;
+}

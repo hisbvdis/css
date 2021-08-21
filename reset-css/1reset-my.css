@@ -6,6 +6,12 @@
 }
 
 
+/* Курсор "рука" для ссылок и активных кнопок */
+a, button:not(:disabled) {
+  cursor: pointer;
+}
+
+
 /* Box-sizing */
 html { box-sizing: border-box }
 *, *::before, *::after {box-sizing: inherit}
@@ -23,10 +29,7 @@ img {
 }
 
 
-/* Курсор "пальчик" для активных кнопок */
-button:not(:disabled) {
-  cursor: pointer;
-}
+
 
 
 /* "1rem=1px" для размеров шрифта */
