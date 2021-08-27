@@ -1,0 +1,57 @@
+/* СБРОС */
+/* Удалить браузерные стили, для всех свойств, кроме "display" */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+
+/* BOX-SIZING */
+html { box-sizing: border-box }
+*, *::before, *::after {box-sizing: inherit}
+
+
+/* BODY */
+body {
+  /* Всегда включённый scroll */
+  overflow-y: scroll;
+}
+
+
+/* РАЗМЕР ШРИФТА 1rem=1px */
+/* "rem" - если в браузере изменён размер шрифта по умолчанию, чтобы сохранялись пропорции */
+:root { font-size: 6.25% }
+body  { font-size: 14rem }
+
+
+/* ССЫЛКИ */
+a {
+  text-decoration: underline;
+  
+  cursor: pointer;
+}
+
+
+/* КНОПКИ */
+/* Курсор "рука" для активных кнопок */
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+
+/* ИЗОБРАЖЕНИЯ */
+img {
+  max-width: 100%;
+}
+
+
+/* INPUT */
+input {
+  background-color: #fff;
+}
+
+
+/* TEXTAREA */
+textarea {
+  background-color: #fff;
+}

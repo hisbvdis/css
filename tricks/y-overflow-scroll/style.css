@@ -1,0 +1,30 @@
+/* 1. Родитель прокручиваемого элемента  */
+/* Добавить "display: flex" и "flex-direction: column" */
+.coral-container {
+  display: flex;
+  flex-direction: column;
+  max-block-size: 500px;
+  padding: 50px;
+  
+  background-color: lightcoral;
+}
+
+
+/* 2. Прокручиваемый элемент */
+/* Добавить "overflow-y: auto" */
+ul {
+  margin: 0;
+  padding: 50px;
+  
+  background-color: lightgreen;
+  
+  list-style: none;
+  overflow-y: auto;
+}
+
+li {
+  min-block-size: 100px;
+
+  background-color: lightblue;
+  border: 1px solid darkblue;
+}

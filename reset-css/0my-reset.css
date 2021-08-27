@@ -1,0 +1,44 @@
+/* BOX-SIZING */
+html { box-sizing: border-box }
+*, *::before, *::after {box-sizing: inherit}
+
+
+/* УДАЛЕНИЕ ВНЕШНИХ ОТСТУПОВ */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+/* BODY */
+body {
+  /* Всегда включённый scroll */
+  overflow-y: scroll;
+}
+
+
+/* РАЗМЕР ШРИФТА 1rem=1px */
+/* "rem" - если в браузере изменён размер шрифта по умолчанию, чтобы сохранялись пропорции */
+:root { font-size: 6.25% }
+body  { font-size: 14rem }
+
+
+/* НАСЛЕДОВАНИЕ ШРИФТОВ */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
