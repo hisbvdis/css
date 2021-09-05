@@ -1,10 +1,4 @@
-# **Альтернатива удалению Outline**
-
-Описание в CSS-файле
-
-[CSS-файл](main.css)<br/>
-[HTML-файл](index.html)
-
+# Правильная стилизация состояния фокуса
 
 **Источники**
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible)

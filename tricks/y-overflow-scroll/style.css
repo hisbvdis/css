@@ -1,5 +1,8 @@
-/* 1. Родитель прокручиваемого элемента  */
-/* Добавить "display: flex" и "flex-direction: column" */
+/* 
+1. Родителю прокручиваемого элемента:
+  - добавить свойство `display: flex`
+  - добавить свойство `flex-direction: column` 
+*/
 .coral-container {
   display: flex;
   flex-direction: column;
@@ -10,8 +13,11 @@
 }
 
 
-/* 2. Прокручиваемый элемент */
-/* Добавить "overflow-y: auto" */
+/* 
+2. Прокручиваемому элементу
+  - добавить свойство `overflow-y: auto`
+*/
+*/
 ul {
   margin: 0;
   padding: 50px;
