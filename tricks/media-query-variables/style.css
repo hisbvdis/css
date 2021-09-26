@@ -1,0 +1,10 @@
+body {
+  background-color: gray;
+}
+
+@media (min-width: 900px) {
+  body {
+    min-block-size: 100vh;   
+    background-color: red;
+  }
+}

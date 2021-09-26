@@ -1,0 +1,12 @@
+@custom-media --desktop (min-width: 900px);
+
+body {
+  background-color: gray;
+}
+
+@media (--desktop) {
+  body {
+    min-block-size: 100vh;   
+    background-color: red;
+  }
+}
