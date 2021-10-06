@@ -1,0 +1,25 @@
+/* Круг */
+.circle {
+  inline-size: 50px;
+  block-size: 50px;
+  
+  border-radius: 50%;
+}
+
+
+/* Таблетка */
+.pill {
+  inline-size: 50px;
+  block-size: 25px;
+  
+  border-radius: 100vh;
+}
+
+
+
+/* Служебные стили */
+div {
+  margin-block-end: 20px;
+  
+  border: 1px solid #000;
+}
