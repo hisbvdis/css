@@ -1,44 +1,40 @@
-/* BOX-SIZING */
+/* Box-sizing */
 html { box-sizing: border-box }
 *, *::before, *::after {box-sizing: inherit}
 
 
-/* УДАЛЕНИЕ ВНЕШНИХ ОТСТУПОВ */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-
-/* BODY */
 body {
-  /* Всегда включённый scroll */
+  min-inline-size: 320px;
+  margin: 0;
+  
   overflow-y: scroll;
 }
 
 
-/* РАЗМЕР ШРИФТА 1rem=1px */
+/* Размер шрифта 1rem=1px */
 /* "rem" - если в браузере изменён размер шрифта по умолчанию, чтобы сохранялись пропорции */
 :root { font-size: 6.25% }
 body  { font-size: 14rem }
 
 
-/* НАСЛЕДОВАНИЕ ШРИФТОВ */
+/* Наследование шрифтов */
 input,
 button,
 textarea,
 select {
   font: inherit;
+}
+
+
+/* Размеры изображений */
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+
+/* Отключение миганий в Chrome */
+a,
+summary {
+  -webkit-tap-highlight-color: transparent;
 }

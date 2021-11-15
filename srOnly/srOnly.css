@@ -18,6 +18,12 @@
 
 /* Современный */
 .srOnly {
+  appearance: none;
+}
+
+
+/* НЕПОНЯТНО */
+.srOnly {
   -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
   clip-path: polygon(0 0, 0 0, 0 0, 0 0);
 }
