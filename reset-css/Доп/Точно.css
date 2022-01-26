@@ -1,0 +1,20 @@
+/* Наследовать стиль шрифтов от родителя  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* Отключение миганий в Chrome */
+a,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* Курсор "рука" для активных кнопок */
+button:not(:disabled) {
+  cursor: pointer;
+}
