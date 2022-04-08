@@ -3,6 +3,14 @@
   box-sizing: border-box;
 }
 
+/* Наследовать стиль шрифтов от родителя  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 
 /* Размеры изображений */
 img {
@@ -41,4 +49,14 @@ dl,
 dd,
 input {
   margin: unset;
+}
+
+
+/* Убрать внутренние отступы */
+ul,
+ol,
+input,
+button,
+textarea {
+  padding: unset;
 }

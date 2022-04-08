@@ -1,18 +1,19 @@
 /* Плохой пример */
-input:focus {
+/* .elem:focus {
   outline: none;
-}л
+} */
 
 
-
-/* Хороший пример */
-/* Фокус при навигации с помощью клавиатуры */
-input:focus-visible {
-  outline: 4ps dashed black;
+/* Стилизация фокуса при навигации с помощью клавиатуры */
+/* Применяется ко всем элементам */
+.elem:focus-visible {
+  outline: none;
+  border: 2px solid red;
 }
 
-/* Фокус при навигации с помощью мыши, тача или стилуса */
-input:focus:not(:focus-visible) {
+/* Стилизация фокуса при навигации с помощью мыши, тача или стилуса */
+/* Применяется к кнопкам */
+/* Не применяется к <input/> */
+.elem:focus:not(:focus-visible) {
   outline: none;
-  box-shadow: 1px 1px 5px rgba(1, 1, 0, 0.7);
 }
