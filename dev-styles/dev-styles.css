@@ -1,10 +1,4 @@
 /* Изображения без нужных атрибутов */
-img:not([alt]),
-img:not([width]),
-img:not([height]) {
-  outline: 2px solid red;
-}
-
 :is(img, svg):not(:is([alt], [width], [height])) {
   outline: 2px solid red;
 }

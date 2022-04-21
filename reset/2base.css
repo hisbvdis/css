@@ -5,11 +5,16 @@
 
 
 body {
+  /* Запретить ширину меньше 320px */
   min-inline-size: 320px;
   
+  /* Шрифт без засечек */
   font-family: sans-serif;
+  /* Стандартный размер браузеров 16px = 16rem */
   font-size: 16rem;
-  line-height: 1.2;
+  /*  */
+  line-height: 1.15;
   
-  overflow-y: scroll; /* ?????? */
+  /* По умолчанию прокрутка у всех страниц */
+  overflow-y: scroll;
 }
